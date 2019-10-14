@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pursuit_Core_iOS_Animations_Lab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfc-4u-2mL">
+                                <rect key="frame" x="87" y="194" width="240" height="240"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="0iw-og-mRO"/>
+                                    <constraint firstAttribute="width" constant="240" id="iKZ-RY-4g9"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZ5-ib-nFl">
+                                <rect key="frame" x="20" y="693" width="146" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="Dg8-dk-oZ8"/>
+                                    <constraint firstAttribute="height" constant="30" id="c17-fp-2Ul"/>
+                                </constraints>
+                                <state key="normal" title="Move Square Down">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveDownButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vt9-yQ-rdo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8V-f8-kEq">
+                                <rect key="frame" x="248" y="693" width="146" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="9Mq-ug-02j"/>
+                                    <constraint firstAttribute="height" constant="30" id="Keh-Pg-hpR"/>
+                                </constraints>
+                                <state key="normal" title="Move Square Up">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveUpButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9xB-jP-BSd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6d-vk-8bo">
+                                <rect key="frame" x="248" y="89" width="146" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="CEb-4d-xTq"/>
+                                    <constraint firstAttribute="height" constant="30" id="LFV-WG-3no"/>
+                                </constraints>
+                                <state key="normal" title="Move Square Right">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveRightButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CFm-ED-40a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4n-W1-Ue7">
+                                <rect key="frame" x="20" y="89" width="146" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="1qO-Ej-A18"/>
+                                    <constraint firstAttribute="height" constant="30" id="ops-uF-JUr"/>
+                                </constraints>
+                                <state key="normal" title="Move Square Left">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveLeftButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1MX-VG-saT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="n4n-W1-Ue7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="39E-IA-dbn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jZ5-ib-nFl" secondAttribute="bottom" constant="139" id="Def-ex-9Xf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W6d-vk-8bo" secondAttribute="trailing" constant="20" id="Ggh-le-O3u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v8V-f8-kEq" secondAttribute="bottom" constant="139" id="H9B-To-VbN"/>
+                            <constraint firstItem="n4n-W1-Ue7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="UHw-qG-lfa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v8V-f8-kEq" secondAttribute="trailing" constant="20" id="g79-Gp-bjR"/>
+                            <constraint firstItem="hfc-4u-2mL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="lIi-Er-H30"/>
+                            <constraint firstItem="jZ5-ib-nFl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nh4-MM-C15"/>
+                            <constraint firstItem="W6d-vk-8bo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="qf4-7W-LfT"/>
+                            <constraint firstItem="hfc-4u-2mL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sEA-Ze-KmK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="squareView" destination="hfc-4u-2mL" id="DB7-9j-jcf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>
