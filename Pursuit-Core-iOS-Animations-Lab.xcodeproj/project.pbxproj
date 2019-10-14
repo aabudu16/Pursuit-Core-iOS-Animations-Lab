@@ -13,6 +13,9 @@
 		85FB557B2354FFB9009D6BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85FB557A2354FFB9009D6BBA /* Assets.xcassets */; };
 		85FB557E2354FFB9009D6BBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FB557C2354FFB9009D6BBA /* LaunchScreen.storyboard */; };
 		85FB55892354FFBA009D6BBA /* Pursuit_Core_iOS_Animations_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB55882354FFBA009D6BBA /* Pursuit_Core_iOS_Animations_LabTests.swift */; };
+		85FB559423550E1D009D6BBA /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB559323550E1D009D6BBA /* PickerViewController.swift */; };
+		85FB559623550FBD009D6BBA /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB559523550FBD009D6BBA /* Animations.swift */; };
+		85FB559823551728009D6BBA /* DoubleExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB559723551728009D6BBA /* DoubleExtention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		85FB55842354FFB9009D6BBA /* Pursuit-Core-iOS-Animations-LabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pursuit-Core-iOS-Animations-LabTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FB55882354FFBA009D6BBA /* Pursuit_Core_iOS_Animations_LabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pursuit_Core_iOS_Animations_LabTests.swift; sourceTree = "<group>"; };
 		85FB558A2354FFBA009D6BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85FB559323550E1D009D6BBA /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		85FB559523550FBD009D6BBA /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		85FB559723551728009D6BBA /* DoubleExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,9 @@
 			children = (
 				85FB55732354FFB8009D6BBA /* AppDelegate.swift */,
 				85FB55752354FFB8009D6BBA /* ViewController.swift */,
+				85FB559323550E1D009D6BBA /* PickerViewController.swift */,
+				85FB559523550FBD009D6BBA /* Animations.swift */,
+				85FB559723551728009D6BBA /* DoubleExtention.swift */,
 				85FB55772354FFB8009D6BBA /* Main.storyboard */,
 				85FB557A2354FFB9009D6BBA /* Assets.xcassets */,
 				85FB557C2354FFB9009D6BBA /* LaunchScreen.storyboard */,
@@ -197,7 +206,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85FB559823551728009D6BBA /* DoubleExtention.swift in Sources */,
+				85FB559423550E1D009D6BBA /* PickerViewController.swift in Sources */,
 				85FB55762354FFB8009D6BBA /* ViewController.swift in Sources */,
+				85FB559623550FBD009D6BBA /* Animations.swift in Sources */,
 				85FB55742354FFB8009D6BBA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
