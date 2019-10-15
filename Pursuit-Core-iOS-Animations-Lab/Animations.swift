@@ -9,5 +9,5 @@
 import Foundation
 
 struct Animations{
-    static let picker = ["Pisces","Aquarius","Aries","Taurus","Gemini","Cancer","leo","Virgo","Libra","Scorpio","Sagittarius","Capricorn"]
+    static let picker = ["layoutSubviews", "autoreverse", "repeat",  "curveEaseInOut", "transitionFlipFromLeft", "transitionFlipFromRight",  "transitionCurlUp",  "transitionCurlDown"]
 }

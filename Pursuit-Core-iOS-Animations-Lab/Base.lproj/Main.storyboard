@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pursuit_Core_iOS_Animations_Lab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Pursuit_Core_iOS_Animations_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZ5-ib-nFl">
-                                <rect key="frame" x="20" y="693" width="146" height="30"/>
+                                <rect key="frame" x="20" y="587" width="146" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="146" id="Dg8-dk-oZ8"/>
@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8V-f8-kEq">
-                                <rect key="frame" x="248" y="693" width="146" height="30"/>
+                                <rect key="frame" x="248" y="587" width="146" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="146" id="9Mq-ug-02j"/>
@@ -55,11 +55,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6d-vk-8bo">
-                                <rect key="frame" x="248" y="89" width="146" height="30"/>
+                                <rect key="frame" x="248" y="109" width="146" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="146" id="CEb-4d-xTq"/>
-                                    <constraint firstAttribute="height" constant="30" id="LFV-WG-3no"/>
+                                    <constraint firstAttribute="width" constant="146" id="XTF-Ln-BoF"/>
+                                    <constraint firstAttribute="height" constant="30" id="y46-um-SdA"/>
                                 </constraints>
                                 <state key="normal" title="Move Square Right">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -69,7 +69,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4n-W1-Ue7">
-                                <rect key="frame" x="20" y="89" width="146" height="30"/>
+                                <rect key="frame" x="20" y="109" width="146" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="146" id="1qO-Ej-A18"/>
@@ -90,29 +90,51 @@
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duration Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUf-Sm-r7c">
-                                <rect key="frame" x="20" y="52" width="374" height="21"/>
+                                <rect key="frame" x="20" y="841" width="374" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B71-wZ-1cD">
+                                <rect key="frame" x="0.0" y="45" width="414" height="50"/>
+                                <items>
+                                    <barButtonItem title="Item" image="settings" width="444" id="Dob-TM-ugr">
+                                        <connections>
+                                            <action selector="settingsButtonPreesed:" destination="BYZ-38-t0r" id="THB-s0-k1a"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLK-gB-I5V">
+                                <rect key="frame" x="0.0" y="736" width="403" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="CustomAnimationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hvg-v2-2D8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="n4n-W1-Ue7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="39E-IA-dbn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jZ5-ib-nFl" secondAttribute="bottom" constant="139" id="Def-ex-9Xf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W6d-vk-8bo" secondAttribute="trailing" constant="20" id="Ggh-le-O3u"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v8V-f8-kEq" secondAttribute="bottom" constant="139" id="H9B-To-VbN"/>
-                            <constraint firstItem="n4n-W1-Ue7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="UHw-qG-lfa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jZ5-ib-nFl" secondAttribute="bottom" constant="245" id="Def-ex-9Xf"/>
+                            <constraint firstItem="B71-wZ-1cD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="EDv-3v-oBC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v8V-f8-kEq" secondAttribute="bottom" constant="245" id="H9B-To-VbN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W6d-vk-8bo" secondAttribute="trailing" constant="20" id="IIT-Qf-5Dg"/>
+                            <constraint firstItem="B71-wZ-1cD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="V3J-zw-lJv"/>
+                            <constraint firstItem="n4n-W1-Ue7" firstAttribute="top" secondItem="B71-wZ-1cD" secondAttribute="bottom" constant="14" id="bGF-wL-Nva"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v8V-f8-kEq" secondAttribute="trailing" constant="20" id="g79-Gp-bjR"/>
                             <constraint firstItem="hfc-4u-2mL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="lIi-Er-H30"/>
                             <constraint firstItem="jZ5-ib-nFl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nh4-MM-C15"/>
-                            <constraint firstItem="W6d-vk-8bo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="qf4-7W-LfT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B71-wZ-1cD" secondAttribute="trailing" id="pe5-0O-nGG"/>
                             <constraint firstItem="hfc-4u-2mL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sEA-Ze-KmK"/>
+                            <constraint firstItem="W6d-vk-8bo" firstAttribute="top" secondItem="B71-wZ-1cD" secondAttribute="bottom" constant="14" id="w5p-oB-LC0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="customAnimateLabel" destination="MLK-gB-I5V" id="tjc-eL-yYo"/>
                         <outlet property="durationSpeedLabel" destination="cUf-Sm-r7c" id="aFu-Tg-GvU"/>
                         <outlet property="squareView" destination="hfc-4u-2mL" id="DB7-9j-jcf"/>
                     </connections>
@@ -124,7 +146,7 @@
         <!--Picker View Controller-->
         <scene sceneID="k0B-Rs-ZHg">
             <objects>
-                <viewController id="Qad-14-uvy" customClass="PickerViewController" customModule="Pursuit_Core_iOS_Animations_Lab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PickerViewController" id="Qad-14-uvy" customClass="PickerViewController" customModule="Pursuit_Core_iOS_Animations_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dpe-od-Nrg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,6 +162,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJW-3M-xuY">
+                                <rect key="frame" x="189" y="718" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="enterButtonPressed:" destination="Qad-14-uvy" eventType="touchUpInside" id="MI3-G5-vF2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Hch-C1-s7v"/>
@@ -154,4 +184,7 @@
             <point key="canvasLocation" x="1017.3913043478261" y="133.92857142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="settings" width="50" height="50"/>
+    </resources>
 </document>

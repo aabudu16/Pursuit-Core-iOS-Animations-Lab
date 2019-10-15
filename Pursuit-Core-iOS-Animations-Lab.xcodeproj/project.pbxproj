@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8500DE1123554FA90066F9BC /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8500DE1023554FA90066F9BC /* UserDefault.swift */; };
 		85FB55742354FFB8009D6BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB55732354FFB8009D6BBA /* AppDelegate.swift */; };
 		85FB55762354FFB8009D6BBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB55752354FFB8009D6BBA /* ViewController.swift */; };
 		85FB55792354FFB8009D6BBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FB55772354FFB8009D6BBA /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8500DE1023554FA90066F9BC /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		85FB55702354FFB8009D6BBA /* Pursuit-Core-iOS-Animations-Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pursuit-Core-iOS-Animations-Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FB55732354FFB8009D6BBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85FB55752354FFB8009D6BBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				85FB559323550E1D009D6BBA /* PickerViewController.swift */,
 				85FB559523550FBD009D6BBA /* Animations.swift */,
 				85FB559723551728009D6BBA /* DoubleExtention.swift */,
+				8500DE1023554FA90066F9BC /* UserDefault.swift */,
 				85FB55772354FFB8009D6BBA /* Main.storyboard */,
 				85FB557A2354FFB9009D6BBA /* Assets.xcassets */,
 				85FB557C2354FFB9009D6BBA /* LaunchScreen.storyboard */,
@@ -208,6 +211,7 @@
 			files = (
 				85FB559823551728009D6BBA /* DoubleExtention.swift in Sources */,
 				85FB559423550E1D009D6BBA /* PickerViewController.swift in Sources */,
+				8500DE1123554FA90066F9BC /* UserDefault.swift in Sources */,
 				85FB55762354FFB8009D6BBA /* ViewController.swift in Sources */,
 				85FB559623550FBD009D6BBA /* Animations.swift in Sources */,
 				85FB55742354FFB8009D6BBA /* AppDelegate.swift in Sources */,
