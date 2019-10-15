@@ -46,8 +46,6 @@ extension PickerViewController: UIPickerViewDelegate{
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
-        guard let VC = storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController else {return}
         animationLabel.text = animations[row]
     }
 }

@@ -50,7 +50,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func CustomAnimationButtonPressed(_ sender: UIButton) {
-        customAnimateLabel.titleLabel?.text = UserDefaultWrapper.shared.getAnimation()
         switch UserDefaultWrapper.shared.getAnimation(){
         case "layoutSubviews":
             UIView.transition(with: squareView, duration: duration, options: [ .layoutSubviews], animations: {
